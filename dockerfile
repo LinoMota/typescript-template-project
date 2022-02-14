@@ -12,6 +12,5 @@ RUN npm run build
 
 RUN rm -rf src
 
-RUN ls -lah
 
 CMD [ "npm", "start"]
