@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "ts-node src/index.ts",
+    "start": "node dist/index.js",
+    "start:dev": "ts-node src/index.ts",
+    "build": "tsc",
     "prepare": "husky install",
     "test": "jest --runInBand --verbose",
     "test:dev": "jest --runInBand --watch",
