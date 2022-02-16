@@ -8,9 +8,10 @@
     "start:dev": "ts-node src/index.ts",
     "build": "tsc",
     "prepare": "husky install",
-    "test": "jest --runInBand --verbose",
-    "test:dev": "jest --runInBand --watch",
-    "test:ci": "jest --coverage=true --silent"
+    "test": "jest --runInBand --passWithNoTests --verbose",
+    "test:staged": "npm test -- --findRelatedTests",
+    "test:dev": "npm test -- --watch",
+    "test:ci": "npm test -- --coverage=true"
   },
   "keywords": [],
   "author": "",
