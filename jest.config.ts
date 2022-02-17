@@ -3,5 +3,8 @@ export default {
   collectCoverage: false,
   coverageDirectory: 'coverage',
   coverageProvider: 'v8',
-  rootDir: 'src/'
+  rootDir: 'src/',
+  transform: {
+    '.+\\.ts$': 'ts-jest'
+  }
 }
